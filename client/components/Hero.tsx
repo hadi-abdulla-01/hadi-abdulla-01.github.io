@@ -168,7 +168,7 @@ const Hero = () => {
                 <Mail size={20} />
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/hadi-abdulla-01/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
@@ -178,7 +178,7 @@ const Hero = () => {
                 <Github size={20} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/mohammed-hadi-abdulla-4033782b5/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}

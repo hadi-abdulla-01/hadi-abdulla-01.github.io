@@ -4,34 +4,34 @@ import { Code, Palette, Wrench } from "lucide-react";
 const About = () => {
   const services = [
     {
-      icon: <Palette size={40} />,
-      title: "DESIGN",
+      icon: <Code size={40} />,
+      title: "AI/ML DEVELOPMENT",
       description:
-        "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.",
+        "Building intelligent systems using machine learning algorithms, neural networks, and deep learning frameworks like TensorFlow to solve complex problems.",
     },
     {
-      icon: <Code size={40} />,
-      title: "DEVELOPMENT",
+      icon: <Palette size={40} />,
+      title: "WEB DEVELOPMENT",
       description:
-        "Based on a project created by me or sent by you, I can program the website to be fully functional and responsive.",
+        "Creating modern, responsive web applications using React, Next.js, and other cutting-edge technologies with focus on user experience.",
     },
     {
       icon: <Wrench size={40} />,
-      title: "MAINTENANCE",
+      title: "SOFTWARE SOLUTIONS",
       description:
-        "In case of any problems or the need for changes, I can introduce new functionalities and solutions.",
+        "Developing custom software applications, data analysis tools, and automation scripts to streamline processes and boost productivity.",
     },
   ];
 
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        {/* IT Berries Section */}
+        {/* Tech Journey Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-gray-800 to-black text-white py-16 px-8 md:px-16 rounded-lg mb-20 relative overflow-hidden"
+          className="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16 px-8 md:px-16 rounded-lg mb-20 relative overflow-hidden"
         >
           <div className="relative z-10">
             <motion.h2
@@ -40,7 +40,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-bold mb-6 tracking-wider"
             >
-              IT BERRIES
+              MY TECH JOURNEY
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, x: -30 }}
@@ -49,13 +49,13 @@ const About = () => {
               transition={{ delay: 0.2 }}
               className="text-base md:text-lg leading-relaxed mb-8 max-w-5xl"
             >
-              I am one of the members of a scientific club that brings together
-              enthusiasts of the Internet and new technologies. At ITberries, we
-              design and develop websites and applications. Apart from projects,
-              our biggest undertaking is the Dark Side UX conference, which we
-              organize annually. Working in the club as a Front-End Developer
-              has definitely developed my teamwork skills and ability to work
-              under pressure.
+              As a passionate tech enthusiast and B.Tech CSE (AI & ML) student,
+              I'm deeply immersed in the world of artificial intelligence,
+              machine learning, and software development. My journey spans
+              across web development, AI model building, and creating
+              intelligent solutions that solve real-world problems. I believe in
+              the power of technology to transform lives and am constantly
+              exploring cutting-edge frameworks and methodologies.
             </motion.p>
             <motion.button
               initial={{ opacity: 0, x: -30 }}
@@ -66,7 +66,7 @@ const About = () => {
               whileTap={{ scale: 0.95 }}
               className="border-b-2 border-white pb-1 text-white font-semibold hover:border-gray-300 transition-colors"
             >
-              READ MORE
+              EXPLORE MORE
             </motion.button>
           </div>
 
@@ -95,11 +95,13 @@ const About = () => {
             transition={{ delay: 0.2 }}
             className="text-gray-700 max-w-4xl mx-auto text-lg leading-relaxed mb-12"
           >
-            My name is Alex Johnson, I'm a passionate Front-End Developer and UI
-            Designer with over 3 years of experience. I have been learning and
-            mastering modern web technologies, and I'm confident that creating
-            beautiful, functional user experiences is my calling in this
-            industry.
+            My name is Mohammed Hadi Abdulla, I'm a dedicated B.Tech CSE (AI &
+            ML) student and aspiring AI/ML developer with a passion for creating
+            intelligent solutions. I specialize in machine learning model
+            development, web applications, and software engineering. My
+            expertise spans from building neural networks to developing
+            full-stack applications, always focusing on leveraging technology to
+            solve complex problems and improve user experiences.
           </motion.p>
 
           <motion.button

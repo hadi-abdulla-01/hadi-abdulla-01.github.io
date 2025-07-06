@@ -70,9 +70,10 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <p className="text-gray-600 leading-relaxed mb-8">
-                I'm currently available for freelance work and full-time
-                opportunities. Whether you have a project in mind or just want
-                to say hello, I'd love to hear from you.
+                I'm passionate about AI/ML projects, web development, and
+                innovative tech solutions. Whether you have an exciting AI
+                project, need a web application, or want to collaborate on
+                cutting-edge technology, I'd love to hear from you.
               </p>
             </div>
 
@@ -132,7 +133,7 @@ const Contact = () => {
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <motion.a
-                  href="https://github.com"
+                  href="https://github.com/hadi-abdulla-01/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -142,7 +143,7 @@ const Contact = () => {
                   GH
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/mohammed-hadi-abdulla-4033782b5/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -152,7 +153,7 @@ const Contact = () => {
                   IN
                 </motion.a>
                 <motion.a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/hadi_abdulla_/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}

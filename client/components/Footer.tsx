@@ -117,17 +117,17 @@ const Footer = () => {
             },
             {
               icon: <Github size={20} />,
-              href: "https://github.com/hadi-abdulla-01",
+              href: "https://github.com/hadi-abdulla-01/",
               label: "GitHub",
             },
             {
               icon: <Linkedin size={20} />,
-              href: "https://linkedin.com/in/YOUR_LINK",
+              href: "https://www.linkedin.com/in/mohammed-hadi-abdulla-4033782b5/",
               label: "LinkedIn",
             },
             {
               icon: <Instagram size={20} />,
-              href: "https://instagram.com/YOUR_HANDLE",
+              href: "https://www.instagram.com/hadi_abdulla_/",
               label: "Instagram",
             },
           ].map((social, index) => (

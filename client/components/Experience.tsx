@@ -41,8 +41,19 @@ const Experience = () => {
           {/* Company Header */}
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center space-x-4">
-              <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center">
-                <Building className="text-white" size={24} />
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center p-2">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/C4D0BAQGQb7qyU1GU_Q/company-logo_200_200/company-logo_200_200/0/1644838079005?e=1743638400&v=beta&t=_Z8gQf0kXVPaWEkP6FhNqtfnV4WqCBYUBtpktQGOhEA"
+                  alt="Novolo AI Logo"
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                    e.currentTarget.nextElementSibling!.style.display = "flex";
+                  }}
+                />
+                <div className="w-full h-full bg-blue-600 rounded-lg hidden items-center justify-center">
+                  <Building className="text-white" size={24} />
+                </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold">{experience.company}</h3>
