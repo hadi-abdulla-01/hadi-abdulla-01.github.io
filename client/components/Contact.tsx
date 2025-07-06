@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-gray-600">alex.johnson@example.com</p>
+                  <p className="text-gray-600">mhadiabdulla4@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Phone</p>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+91 907541422</p>
                 </div>
               </motion.div>
 
@@ -123,7 +123,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-semibold">Location</p>
-                  <p className="text-gray-600">San Francisco, CA</p>
+                  <p className="text-gray-600">
+                    Matool South,Kannur,Kerala,India
+                    <br />
+                    670302
+                  </p>
                 </div>
               </motion.div>
             </div>
@@ -140,7 +144,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   className="w-10 h-10 bg-gray-800 text-white rounded-lg flex items-center justify-center hover:bg-black transition-colors"
                 >
-                  GH
+                  <Github size={18} />
                 </motion.a>
                 <motion.a
                   href="https://www.linkedin.com/in/mohammed-hadi-abdulla-4033782b5/"
@@ -150,7 +154,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   className="w-10 h-10 bg-blue-600 text-white rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
                 >
-                  IN
+                  <Linkedin size={18} />
                 </motion.a>
                 <motion.a
                   href="https://www.instagram.com/hadi_abdulla_/"
@@ -160,7 +164,7 @@ const Contact = () => {
                   whileTap={{ scale: 0.9 }}
                   className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors"
                 >
-                  IG
+                  <Instagram size={18} />
                 </motion.a>
               </div>
             </div>
