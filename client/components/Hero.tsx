@@ -25,7 +25,9 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-white font-bold text-2xl"
           >
-            TG
+            <p>
+              <br />
+            </p>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -209,7 +211,7 @@ const Hero = () => {
                 className="w-80 h-96 md:w-96 md:h-[450px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl"
               >
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F9514719161f346c397ec628b5606f25f"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
