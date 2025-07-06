@@ -6,7 +6,7 @@ const Experience = () => {
     company: "Novolo AI",
     position: "AI/ML Intern",
     location: "United Kingdom (Remote)",
-    duration: "2024",
+    duration: "JUNE 2025 (2 WEEKS INTERNSHIP)",
     description:
       "Gained hands-on experience in building AI/ML programs and working with cutting-edge artificial intelligence technologies. Collaborated with the UK-based team to develop intelligent solutions and learned industry best practices in machine learning development.",
     skills: [
@@ -51,9 +51,18 @@ const Experience = () => {
                     e.currentTarget.nextElementSibling!.style.display = "flex";
                   }}
                 />
-                <div className="w-full h-full bg-blue-600 rounded-lg hidden items-center justify-center">
-                  <Building className="text-white" size={24} />
-                </div>
+                <div
+                  className="w-full h-full bg-blue-600 rounded-lg hidden items-center justify-center"
+                  style={{
+                    backgroundImage:
+                      "url(https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F088d2b4b6986413590fd85ffbf4250e3)",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    borderStyle: "none",
+                    borderWidth: "1px",
+                  }}
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">{experience.company}</h3>
