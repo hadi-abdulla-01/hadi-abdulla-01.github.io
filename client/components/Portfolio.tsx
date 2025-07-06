@@ -28,31 +28,41 @@ const Portfolio = () => {
       id: 1,
       title: "Python Data Structures",
       issuer: "University of Michigan",
+      issuerLink: "https://www.coursera.org/learn/python-data",
       description:
         "Comprehensive course covering Python data structures including lists, dictionaries, tuples, and sets.",
-      date: "2024",
+      date: "February 14, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/4PB883HD6NO1",
       color: "from-blue-500 to-blue-700",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F2c588f64b95d441b8a6cbafe9267848a?format=webp&width=800",
     },
     {
       id: 2,
-      title: "AI For Everyone",
-      issuer: "Andrew Ng",
+      title: "Fundamentals of Java Programming",
+      issuer: "Board Infinity",
+      issuerLink:
+        "https://www.coursera.org/learn/fundamentals-of-java-programming",
       description:
-        "Introduction to artificial intelligence concepts, applications, and impact on society.",
-      date: "2024",
+        "Master the core components of Java programming such as syntax, variables, methods, control statements, and understand JVM, JRE, and JDK.",
+      date: "March 20, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/77WLVRFNIP7X",
       color: "from-green-500 to-green-700",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F2158777b1bea474eb6a2fa212bb8ce0a?format=webp&width=800",
     },
     {
       id: 3,
-      title: "Machine Learning Foundations",
-      issuer: "Coursera",
+      title: "Machine Learning Basics",
+      issuer: "Sungkyunkwan University",
+      issuerLink: "https://www.coursera.org/learn/machine-learning-basics",
       description:
         "Fundamental concepts in machine learning including supervised and unsupervised learning.",
-      date: "2024",
+      date: "April 26, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/94ZFXFVJ0R7C",
       color: "from-purple-500 to-purple-700",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F89a1fdeabf4d4f90872da53a740bcc66?format=webp&width=800",
     },
   ];
 
@@ -176,20 +186,14 @@ const Portfolio = () => {
                 className="group"
               >
                 <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-700 hover:border-gray-600">
-                  {/* Certificate Header */}
-                  <div
-                    className={`h-32 bg-gradient-to-r ${cert.color} flex items-center justify-center relative overflow-hidden`}
-                  >
-                    <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="text-white"
-                    >
-                      <Award size={48} />
-                    </motion.div>
-
-                    {/* Decorative elements */}
-                    <div className="absolute top-2 right-2 w-8 h-8 border border-white/20 rounded-full"></div>
-                    <div className="absolute bottom-2 left-2 w-6 h-6 border border-white/20 rounded-full"></div>
+                  {/* Certificate Image */}
+                  <div className="h-48 overflow-hidden relative">
+                    <img
+                      src={cert.image}
+                      alt={`${cert.title} Certificate`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
                   </div>
 
                   {/* Certificate Content */}
@@ -198,16 +202,23 @@ const Portfolio = () => {
                       {cert.title}
                     </h3>
 
-                    <p className="text-blue-400 font-semibold mb-3">
+                    <a
+                      href={cert.issuerLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 font-semibold mb-3 block hover:text-blue-300 transition-colors text-sm"
+                    >
                       {cert.issuer}
-                    </p>
+                    </a>
 
                     <p className="text-gray-400 text-sm leading-relaxed mb-4">
                       {cert.description}
                     </p>
 
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-500 text-sm">{cert.date}</span>
+                      <span className="text-gray-500 text-base font-medium">
+                        {cert.date}
+                      </span>
 
                       <motion.a
                         href={cert.link}
@@ -234,7 +245,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-20 bg-black text-white">
+    <section id="portfolio" className="pt-20 pb-14 bg-black text-white">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         {/* Header */}
         <div className="text-center mb-16">
