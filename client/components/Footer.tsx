@@ -42,10 +42,10 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-center md:text-left"
           >
-            <h3 className="text-2xl font-bold mb-4">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold mb-4">Mohammed Hadi Abdulla</h3>
             <p className="text-gray-400 leading-relaxed">
-              Front-end Developer & UI Designer passionate about creating
-              beautiful and functional digital experiences.
+              B.Tech CSE (AI & ML) student passionate about creating intelligent
+              solutions and exploring the frontiers of artificial intelligence.
             </p>
           </motion.div>
 
@@ -63,6 +63,7 @@ const Footer = () => {
                 { name: "About", href: "#about" },
                 { name: "Skills", href: "#skills" },
                 { name: "Portfolio", href: "#portfolio" },
+                { name: "Certificates", href: "#certificates" },
                 { name: "Contact", href: "#contact" },
               ].map((link, index) => (
                 <motion.a
@@ -95,9 +96,9 @@ const Footer = () => {
           >
             <h4 className="text-lg font-semibold mb-6">Get in Touch</h4>
             <div className="space-y-3">
-              <p className="text-gray-400">alex.johnson@example.com</p>
-              <p className="text-gray-400">+1 (555) 123-4567</p>
-              <p className="text-gray-400">San Francisco, CA</p>
+              <p className="text-gray-400">mhadiabdulla4@gmail.com</p>
+              <p className="text-gray-400">B.Tech CSE (AI & ML)</p>
+              <p className="text-gray-400">India</p>
             </div>
           </motion.div>
         </div>
@@ -112,22 +113,22 @@ const Footer = () => {
           {[
             {
               icon: <Mail size={20} />,
-              href: "mailto:alex.johnson@example.com",
+              href: "mailto:mhadiabdulla4@gmail.com",
               label: "Email",
             },
             {
               icon: <Github size={20} />,
-              href: "https://github.com",
+              href: "https://github.com/hadi-abdulla-01",
               label: "GitHub",
             },
             {
               icon: <Linkedin size={20} />,
-              href: "https://linkedin.com",
+              href: "https://linkedin.com/in/YOUR_LINK",
               label: "LinkedIn",
             },
             {
               icon: <Instagram size={20} />,
-              href: "https://instagram.com",
+              href: "https://instagram.com/YOUR_HANDLE",
               label: "Instagram",
             },
           ].map((social, index) => (
@@ -163,7 +164,7 @@ const Footer = () => {
           className="text-center"
         >
           <p className="text-gray-400 text-sm">
-            © {currentYear} Alex Johnson. All rights reserved.
+            © {currentYear} Mohammed Hadi Abdulla. All rights reserved.
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Designed and developed with ❤️ using React & TypeScript

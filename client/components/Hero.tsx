@@ -49,6 +49,12 @@ const Hero = () => {
               Portfolio
             </button>
             <button
+              onClick={() => scrollToSection("certificates")}
+              className="text-white hover:text-gray-300 transition-colors"
+            >
+              Certificates
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
               className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition-colors"
             >
@@ -90,6 +96,12 @@ const Hero = () => {
                 className="text-white hover:text-gray-300 transition-colors text-left"
               >
                 Portfolio
+              </button>
+              <button
+                onClick={() => scrollToSection("certificates")}
+                className="text-white hover:text-gray-300 transition-colors text-left"
+              >
+                Certificates
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -138,7 +150,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4"
             >
-              Alex Johnson
+              Mohammed Hadi Abdulla
             </motion.h1>
 
             <motion.p
@@ -147,7 +159,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-lg md:text-xl text-gray-600 mb-8"
             >
-              Front-end Developer / UI Designer
+              B.Tech CSE (AI & ML) student | Aspiring AI/ML Developer
             </motion.p>
 
             {/* Social Links */}
@@ -158,7 +170,7 @@ const Hero = () => {
               className="flex justify-center lg:justify-start space-x-4"
             >
               <motion.a
-                href="mailto:alex@example.com"
+                href="mailto:mhadiabdulla4@gmail.com"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="w-12 h-12 bg-gray-400 rounded-lg flex items-center justify-center text-black hover:bg-gray-500 transition-colors shadow-md"
