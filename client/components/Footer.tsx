@@ -63,7 +63,6 @@ const Footer = () => {
                 { name: "About", href: "#about" },
                 { name: "Skills", href: "#skills" },
                 { name: "Portfolio", href: "#portfolio" },
-                { name: "Certificates", href: "#certificates" },
                 { name: "Contact", href: "#contact" },
               ].map((link, index) => (
                 <motion.a

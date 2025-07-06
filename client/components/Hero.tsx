@@ -49,12 +49,6 @@ const Hero = () => {
               Portfolio
             </button>
             <button
-              onClick={() => scrollToSection("certificates")}
-              className="text-white hover:text-gray-300 transition-colors"
-            >
-              Certificates
-            </button>
-            <button
               onClick={() => scrollToSection("contact")}
               className="bg-white text-black px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition-colors"
             >
@@ -96,12 +90,6 @@ const Hero = () => {
                 className="text-white hover:text-gray-300 transition-colors text-left"
               >
                 Portfolio
-              </button>
-              <button
-                onClick={() => scrollToSection("certificates")}
-                className="text-white hover:text-gray-300 transition-colors text-left"
-              >
-                Certificates
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
