@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-black overflow-hidden"
+      className="relative min-h-screen bg-black overflow-hidden w-full"
     >
       {/* Navigation */}
       <nav className="absolute top-0 left-0 right-0 z-50 p-6 md:p-8">
@@ -107,17 +107,17 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="relative h-screen flex items-center">
         {/* Background Elements */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 w-full overflow-hidden">
           {/* Gray section */}
           <div className="absolute left-0 top-0 w-1/2 h-full bg-gray-300"></div>
           {/* Black diagonal overlay */}
           <div
-            className="absolute top-0 right-0 w-3/5 h-full bg-black transform skew-x-12 origin-top-right"
+            className="absolute top-0 right-0 w-3/5 h-full bg-black transform skew-x-12 origin-top-right max-w-full"
             style={{ clipPath: "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)" }}
           ></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full overflow-hidden">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}

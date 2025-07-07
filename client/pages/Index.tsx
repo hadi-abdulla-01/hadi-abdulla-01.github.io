@@ -8,7 +8,7 @@ import BackToTop from "../components/BackToTop";
 
 export default function Index() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Hero />
       <About />
       <Skills />
