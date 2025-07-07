@@ -129,7 +129,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-2xl md:text-4xl font-light text-black mb-4"
+              className="text-2xl md:text-4xl font-light text-white md:text-black mb-4"
             >
               Hi, I am
             </motion.h2>
@@ -138,7 +138,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white md:text-black mb-4"
             >
               Mohammed Hadi Abdulla
             </motion.h1>
@@ -147,7 +147,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-lg md:text-xl text-gray-600 mb-8"
+              className="text-lg md:text-xl text-gray-200 md:text-gray-600 mb-8"
             >
               B.Tech CSE (AI & ML) student | Aspiring AI/ML Developer
             </motion.p>
