@@ -105,7 +105,7 @@ const Hero = () => {
       </nav>
 
       {/* Hero Content */}
-      <div className="relative h-screen flex items-center">
+      <div className="relative min-h-screen flex items-center py-20 md:py-0">
         {/* Background Elements */}
         <div className="absolute inset-0 w-full overflow-hidden">
           {/* Gray section */}
@@ -117,13 +117,13 @@ const Hero = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full overflow-hidden pt-12 md:pt-0">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full overflow-hidden">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left mt-4 md:mt-0"
+            className="text-center lg:text-left"
           >
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -196,7 +196,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center lg:justify-end"
-            style={{ margin: "16px 0 10px" }}
+            style={{ margin: "0" }}
           >
             <div className="relative">
               <motion.div
