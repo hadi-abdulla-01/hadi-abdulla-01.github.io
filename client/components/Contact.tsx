@@ -42,7 +42,8 @@ const Contact = () => {
         alert("Thank you for your message! I'll get back to you soon.");
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        alert("Something went wrong. Please try again later.");
+        alert(`Something went wrong. Please try again later.\nError: ${error.message}`);
+
       }
     } catch (error) {
       console.error("Form submission error:", error);
