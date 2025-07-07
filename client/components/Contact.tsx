@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -11,7 +18,7 @@ const Contact = () => {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({
       ...formData,
@@ -19,12 +26,28 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-    alert("Thank you for your message! I'll get back to you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    try {
+      const res = await fetch("/.netlify/functions/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        alert("Thank you for your message! I'll get back to you soon.");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("An unexpected error occurred.");
+    }
   };
 
   return (
@@ -124,7 +147,7 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold">Location</p>
                   <p className="text-gray-600">
-                    Matool South,Kannur,Kerala,India
+                    Matool South, Kannur, Kerala, India
                     <br />
                     670302
                   </p>
@@ -185,18 +208,16 @@ const Contact = () => {
                 >
                   ENTER YOUR NAME*
                 </label>
-                <div className="relative">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
-                    placeholder="Your full name"
-                  />
-                </div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
+                  placeholder="Your full name"
+                />
               </div>
 
               <div>
@@ -206,18 +227,16 @@ const Contact = () => {
                 >
                   ENTER YOUR EMAIL*
                 </label>
-                <div className="relative">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
-                    placeholder="your.email@example.com"
-                  />
-                </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
+                  placeholder="your.email@example.com"
+                />
               </div>
 
               <div>
@@ -227,17 +246,15 @@ const Contact = () => {
                 >
                   PHONE NUMBER
                 </label>
-                <div className="relative">
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
-                    placeholder="+1 (555) 123-4567"
-                  />
-                </div>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors"
+                  placeholder="+91 9876543210"
+                />
               </div>
 
               <div>
@@ -247,18 +264,16 @@ const Contact = () => {
                 >
                   YOUR MESSAGE*
                 </label>
-                <div className="relative">
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors resize-none"
-                    placeholder="Tell me about your project..."
-                  />
-                </div>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  className="w-full border-b-2 border-gray-300 py-3 px-0 bg-transparent focus:border-black outline-none transition-colors resize-none"
+                  placeholder="Tell me about your project..."
+                />
               </div>
 
               <motion.button
