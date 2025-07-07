@@ -6,7 +6,7 @@ const Experience = () => {
     company: "Novolo AI",
     position: "AI/ML Intern",
     location: "United Kingdom (Remote)",
-    duration: "JUNE 2025 (2 WEEKS INTERNSHIP)",
+    duration: "JUNE 2025 (3 WEEKS INTERNSHIP)",
     description:
       "Gained hands-on experience in building AI/ML programs and working with cutting-edge artificial intelligence technologies. Collaborated with the UK-based team to develop intelligent solutions and learned industry best practices in machine learning development.",
     skills: [
