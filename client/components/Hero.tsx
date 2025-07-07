@@ -196,6 +196,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center lg:justify-end"
+            style={{ margin: "26px 0 20px" }}
           >
             <div className="relative">
               <motion.div
