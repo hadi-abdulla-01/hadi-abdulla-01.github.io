@@ -11,7 +11,7 @@ const Projects = () => {
       "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=400&fit=crop",
     tech: ["Python", "TensorFlow", "CNN", "Streamlit", "Image Classification"],
     githubUrl: "https://github.com/hadi-abdulla-01/CatsVsDogsClassifier",
-    liveUrl: "https://dogvscatclassifier.streamlit.app", 
+    liveUrl: "https://dogvscatclassifier.streamlit.app",
     features: [
       "Deep Learning CNN model",
       "Real-time image classification",
@@ -61,7 +61,7 @@ const Projects = () => {
                 alt={project.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
             </div>
 
             {/* Project Content */}
@@ -97,7 +97,7 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {project.features.map((feature, index) => (
                     <div key={index} className="flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
