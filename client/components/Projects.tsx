@@ -147,14 +147,18 @@ const Projects = () => {
                   <span>View on GitHub</span>
                 </motion.a>
 
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
-                >
-                  <ExternalLink size={20} />
-                  <span>Live Demo</span>
-                </motion.button>
+                <motion.a
+  href={project.liveUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
+>
+  <ExternalLink size={20} />
+  <span>Live Demo</span>
+</motion.a>
+
               </motion.div>
             </div>
           </div>
