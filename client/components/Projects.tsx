@@ -11,6 +11,7 @@ const Projects = () => {
       "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=400&fit=crop",
     tech: ["Python", "TensorFlow", "CNN", "Streamlit", "Image Classification"],
     githubUrl: "https://github.com/hadi-abdulla-01/CatsVsDogsClassifier",
+    liveUrl: "https://dogvscatclassifier.streamlit.app",
     features: [
       "Deep Learning CNN model",
       "Real-time image classification",
