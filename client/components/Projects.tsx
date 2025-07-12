@@ -11,7 +11,7 @@ const Projects = () => {
       "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=400&fit=crop",
     tech: ["Python", "TensorFlow", "CNN", "Streamlit", "Image Classification"],
     githubUrl: "https://github.com/hadi-abdulla-01/CatsVsDogsClassifier",
-    liveUrl: "https://dogvscatclassifier.streamlit.app",
+    liveUrl: "https://dogvscatclassifier.streamlit.app", 
     features: [
       "Deep Learning CNN model",
       "Real-time image classification",
@@ -148,17 +148,16 @@ const Projects = () => {
                 </motion.a>
 
                 <motion.a
-  href={project.liveUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
->
-  <ExternalLink size={20} />
-  <span>Live Demo</span>
-</motion.a>
-
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
+                >
+                  <ExternalLink size={20} />
+                  <span>Live Demo</span>
+                </motion.a>
               </motion.div>
             </div>
           </div>
