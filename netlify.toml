@@ -3,8 +3,7 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
-[[plugins]]
-  package = "netlify-plugin-prerender"
+
 
 [functions]
   external_node_modules = ["express"]
