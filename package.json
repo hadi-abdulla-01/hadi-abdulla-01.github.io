@@ -21,9 +21,10 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.6.0",
     "express": "^4.18.2",
     "zod": "^3.23.8"
+    // If using PostgreSQL locally or with other services:
+    // "pg": "^8.11.3"
   },
   "devDependencies": {
     "@hookform/resolvers": "^3.9.0",
