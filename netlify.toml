@@ -3,7 +3,12 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
-
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600"
+    X-Frame-Options = "ALLOWALL"
+    Content-Type = "text/html; charset=UTF-8"
 
 [functions]
   external_node_modules = ["express"]
