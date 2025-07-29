@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Award, Building } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { useState } from "react";
 import Experience from "./Experience";
 
@@ -75,7 +75,7 @@ const Portfolio = () => {
       date: "July 29, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/QHOGMCSWPO74",
       color: "from-blue-500 to-blue-700",
-      image:"/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
+      image: "/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
     },
     {
       id: 5,
@@ -87,8 +87,8 @@ const Portfolio = () => {
       date: "July 29, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/YTM52O0SE3PI",
       color: "from-blue-500 to-blue-700",
-      image:"/certificates/CERTIFICATE_LANDING_PAGE~YTM52O0SE3PI.jpeg",
-    }
+      image: "/certificates/CERTIFICATE_LANDING_PAGE~YTM52O0SE3PI.jpeg",
+    },
   ];
 
   const tabs = ["EXPERIENCE", "PROJECTS", "CERTIFICATES"];
@@ -173,14 +173,17 @@ const Portfolio = () => {
                       <span>View on GitHub</span>
                     </motion.a>
 
-                    <motion.button
+                    <motion.a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center justify-center space-x-2 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors"
                     >
                       <ExternalLink size={20} />
                       <span>Live Demo</span>
-                    </motion.button>
+                    </motion.a>
                   </div>
                 </div>
               </div>
@@ -339,3 +342,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
