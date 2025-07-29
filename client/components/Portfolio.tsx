@@ -15,6 +15,7 @@ const Portfolio = () => {
       "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F6fb75edd5537446d8a5f4a547e7f03a1?format=webp&width=800",
     tech: ["Python", "TensorFlow", "CNN", "Streamlit", "Image Classification"],
     githubUrl: "https://github.com/hadi-abdulla-01/CatsVsDogsClassifier",
+    liveUrl: "https://dogvscatclassifier.streamlit.app",
     features: [
       "Deep Learning CNN model",
       "Real-time image classification",
