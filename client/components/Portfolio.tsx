@@ -76,6 +76,18 @@ const Portfolio = () => {
       color: "from-blue-500 to-blue-700",
       image:"/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
     },
+    {
+      id: 5,
+      title: "Machine Learning with Python",
+      issuer: "IBM",
+      issuerLink: "https://www.coursera.org/learn/machine-learning-with-python",
+      description:
+        "Build and assess end-to-end machine learning solutions on real-world datasets through hands-on labs, projects, and practical evaluations.",
+      date: "July 29, 2025",
+      link: "https://www.coursera.org/account/accomplishments/verify/YTM52O0SE3PI",
+      color: "from-blue-500 to-blue-700",
+      image:"/certificates/CERTIFICATE_LANDING_PAGE~YTM52O0SE3PI.jpeg",
+    }
   ];
 
   const tabs = ["EXPERIENCE", "PROJECTS", "CERTIFICATES"];
