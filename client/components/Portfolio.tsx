@@ -75,7 +75,7 @@ const Portfolio = () => {
       link: "https://www.coursera.org/account/accomplishments/verify/QHOGMCSWPO74",
       color: "from-blue-500 to-blue-700",
       image:
-        "client/components/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
+        "public/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
     }
   ];
 
