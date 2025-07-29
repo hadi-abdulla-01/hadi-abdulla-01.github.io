@@ -74,9 +74,8 @@ const Portfolio = () => {
       date: "July 29, 2025",
       link: "https://www.coursera.org/account/accomplishments/verify/QHOGMCSWPO74",
       color: "from-blue-500 to-blue-700",
-      image:
-        "public/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
-    }
+      image:"/certificates/CERTIFICATE_LANDING_PAGE~QHOGMCSWPO74.jpeg",
+    },
   ];
 
   const tabs = ["EXPERIENCE", "PROJECTS", "CERTIFICATES"];
