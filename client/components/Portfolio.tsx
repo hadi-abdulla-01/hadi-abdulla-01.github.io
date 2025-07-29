@@ -64,6 +64,19 @@ const Portfolio = () => {
       image:
         "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F89a1fdeabf4d4f90872da53a740bcc66?format=webp&width=800",
     },
+    {
+      id: 4,
+      title: "Developing AI Applications with Python and Flask",
+      issuer: "IBM",
+      issuerLink: "https://www.coursera.org/learn/python-project-for-ai-application-development",
+      description:
+        "Build and deploy web applications using Flask, including routing, error handling, and CRUD operations.",
+      date: "July 29, 2025",
+      link: "https://www.coursera.org/account/accomplishments/verify/QHOGMCSWPO74",
+      color: "from-blue-500 to-blue-700",
+      image:
+        "https://cdn.builder.io/api/v1/image/assets%2F48f38dd7864840a29a4407bd35c95052%2F2c588f64b95d441b8a6cbafe9267848a?format=webp&width=800",
+    }
   ];
 
   const tabs = ["EXPERIENCE", "PROJECTS", "CERTIFICATES"];
